@@ -54,6 +54,7 @@ class LoginUserState extends State{
                               Container(
                                   margin: EdgeInsets.all(10),
                                   child: TextFormField(
+
                                     style: TextStyle(color: Colors.white),
                                     decoration: new InputDecoration(
                                         filled: true,
@@ -156,6 +157,13 @@ class LoginUserState extends State{
           ],
         ),
         ));
+  }
+
+  @override
+  void initState(){
+    emailController.text = 'faizunnabi1990@gmail.com';
+    passwordController.text = 'faiz123';
+    return super.initState();
   }
 
   Future<void> loginUser(context) async{

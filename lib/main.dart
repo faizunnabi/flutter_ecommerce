@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Login',
-      theme: ThemeData(primaryColor: Colors.amber.shade400),
+      theme: ThemeData(primaryColor: Colors.indigo),
       home: new SplashScreen(),
     );
   }
